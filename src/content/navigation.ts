@@ -30,17 +30,6 @@ export const MAIN_NAVIGATION: NavItem[] = [
     ],
   },
   {
-    label: "Academics",
-    href: "/academics/llb",
-    children: [
-      { label: "LL.B. (3 Years) Programme", href: "/academics/llb" },
-      { label: "B.A. LL.B. (5 Years) Programme", href: "/academics/ba-llb" },
-      { label: "PG Diploma in Cyber Law", href: "/academics/additional-courses" },
-      { label: "LL.B. Syllabus (KSLU)", href: "/academics/syllabus/llb" },
-      { label: "B.A. LL.B. Syllabus (KSLU)", href: "/academics/syllabus/ba-llb" },
-    ],
-  },
-  {
     label: "Campus Life",
     href: "/campus-life/moot-court",
     children: [
