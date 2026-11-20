@@ -124,7 +124,7 @@ export function SiteHeader() {
               />
             </div>
 
-            {/* Left: English identity (centred text) */}
+            {/* Left: English identity (centred text, continuous subtitle) */}
             <Link
               href="/"
               className="text-center group focus-visible:rounded-lg"
@@ -133,10 +133,8 @@ export function SiteHeader() {
                 {COLLEGE_IDENTITY.officialName}
               </p>
               <p className="text-[11px] lg:text-xs font-medium text-[#7A1F1F] mt-1 leading-snug">
-                {COLLEGE_IDENTITY.subtitle} | {COLLEGE_IDENTITY.recognition}
-              </p>
-              <p className="text-[11px] lg:text-xs font-medium text-[#7A1F1F] mt-0.5 leading-snug">
-                Est. {COLLEGE_IDENTITY.establishedYear} &bull; First Private Law College in Bengaluru
+                {COLLEGE_IDENTITY.subtitle} | {COLLEGE_IDENTITY.recognition} | Est.{" "}
+                {COLLEGE_IDENTITY.establishedYear} &bull; First Private Law College in Bengaluru
               </p>
             </Link>
 
@@ -156,22 +154,23 @@ export function SiteHeader() {
               />
             </Link>
 
-            {/* Right: Kannada identity (centred text) */}
-            <div className="text-center">
+            {/* Right: Kannada title with matching English affiliation subtitle underneath (exact reference pattern) */}
+            <Link
+              href="/"
+              className="text-center group focus-visible:rounded-lg"
+            >
               <p
-                className="text-base lg:text-lg font-bold text-[#0B1A4C] leading-tight"
+                className="text-base lg:text-lg font-bold text-[#0B1A4C] leading-tight group-hover:text-[#177249] transition-colors"
                 style={{ fontFamily: "var(--font-kannada)" }}
                 lang="kn"
               >
                 {COLLEGE_IDENTITY.kannadaName}
               </p>
               <p className="text-[11px] lg:text-xs font-medium text-[#7A1F1F] mt-1 leading-snug">
-                {COLLEGE_IDENTITY.societyName} (Est. {COLLEGE_IDENTITY.societyEstablishedYear})
+                {COLLEGE_IDENTITY.subtitle} | {COLLEGE_IDENTITY.recognition} | Est.{" "}
+                {COLLEGE_IDENTITY.establishedYear} &bull; First Private Law College in Bengaluru
               </p>
-              <p className="text-[11px] lg:text-xs font-medium text-[#7A1F1F] mt-0.5 leading-snug">
-                #9, Race Course Road, Bengaluru – 560 009
-              </p>
-            </div>
+            </Link>
 
             {/* Far Right: Sri Rambhapuri Peeta Jagadguru Emblem */}
             <div className="relative h-[58px] w-[58px] lg:h-[68px] lg:w-[68px] shrink-0">
@@ -312,6 +311,58 @@ export function SiteHeader() {
                       <div className="bg-white shadow-2xl rounded-lg py-2 border border-gray-100">
                         {item.children.map((sub) => {
                           const subActive = pathname === sub.href;
+                          if (sub.children && sub.children.length > 0) {
+                            return (
+                              <div key={sub.label} className="relative group/sub">
+                                <Link
+                                  href={sub.href}
+                                  onClick={() => setOpenDropdown(null)}
+                                  className={`flex items-center justify-between gap-2 px-4 py-2.5 text-sm font-medium transition-colors duration-150 ${
+                                    subActive
+                                      ? "text-[#177249] bg-emerald-50/70 font-semibold"
+                                      : "text-[#0B1A4C] hover:text-[#177249] hover:bg-gray-50"
+                                  }`}
+                                >
+                                  <span>{sub.label}</span>
+                                  <ChevronDown
+                                    className="h-3.5 w-3.5 -rotate-90 shrink-0 opacity-70"
+                                    aria-hidden="true"
+                                  />
+                                </Link>
+                                <div className="hidden group-hover/sub:block absolute top-0 left-full pl-1 min-w-64 z-50">
+                                  <div className="bg-white shadow-2xl rounded-lg py-2 border border-gray-100">
+                                    {sub.children.map((nested) =>
+                                      nested.external ? (
+                                        <a
+                                          key={nested.href}
+                                          href={nested.href}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          onClick={() => setOpenDropdown(null)}
+                                          className="block px-4 py-2.5 text-sm font-medium text-[#0B1A4C] hover:text-[#177249] hover:bg-gray-50 transition-colors"
+                                        >
+                                          {nested.label} ↗
+                                        </a>
+                                      ) : (
+                                        <Link
+                                          key={nested.href}
+                                          href={nested.href}
+                                          onClick={() => setOpenDropdown(null)}
+                                          className={`block px-4 py-2.5 text-sm font-medium transition-colors ${
+                                            pathname === nested.href
+                                              ? "text-[#177249] bg-emerald-50/70 font-semibold"
+                                              : "text-[#0B1A4C] hover:text-[#177249] hover:bg-gray-50"
+                                          }`}
+                                        >
+                                          {nested.label}
+                                        </Link>
+                                      )
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          }
                           return (
                             <Link
                               key={sub.href}
@@ -395,10 +446,37 @@ export function SiteHeader() {
                               <Link
                                 href={sub.href}
                                 onClick={() => setMobileOpen(false)}
-                                className="block py-2 text-sm text-white/85 hover:text-[#FFD900]"
+                                className="block py-2 text-sm text-white/90 hover:text-[#FFD900]"
                               >
                                 {sub.label}
                               </Link>
+                              {sub.children && sub.children.length > 0 && (
+                                <ul className="pl-4 pb-1 space-y-1 border-l border-white/20">
+                                  {sub.children.map((nested) => (
+                                    <li key={nested.href}>
+                                      {nested.external ? (
+                                        <a
+                                          href={nested.href}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          onClick={() => setMobileOpen(false)}
+                                          className="block py-1.5 text-xs text-white/80 hover:text-[#FFD900]"
+                                        >
+                                          {nested.label} ↗
+                                        </a>
+                                      ) : (
+                                        <Link
+                                          href={nested.href}
+                                          onClick={() => setMobileOpen(false)}
+                                          className="block py-1.5 text-xs text-white/80 hover:text-[#FFD900]"
+                                        >
+                                          {nested.label}
+                                        </Link>
+                                      )}
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
                             </li>
                           ))}
                         </ul>

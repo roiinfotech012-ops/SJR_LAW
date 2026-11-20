@@ -23,11 +23,10 @@ export const MAIN_NAVIGATION: NavItem[] = [
     label: "Admissions",
     href: "/admissions",
     children: [
-      { label: "Admission Overview & Procedure", href: "/admissions" },
       { label: "LL.B. (3 Years)", href: "/academics/llb" },
       { label: "B.A. LL.B. (5 Years)", href: "/academics/ba-llb" },
       { label: "Additional Courses", href: "/academics/additional-courses" },
-      { label: "Downloads & Syllabuses", href: "/downloads" },
+      { label: "Admission Procedure", href: "/admissions" },
     ],
   },
   {
@@ -67,14 +66,41 @@ export const MAIN_NAVIGATION: NavItem[] = [
     label: "Student Corner",
     href: "/student-corner",
     children: [
-      { label: "Student Corner Overview", href: "/student-corner" },
-      { label: "Scholarships (NSP / SSP)", href: "/student-corner/scholarships" },
+      { label: "Committees", href: "/student-corner/committees" },
+      {
+        label: "Scholarship Grievances Cell (NSP / SSP Links)",
+        href: "/student-corner/scholarships",
+        children: [
+          {
+            label: "NSP Link",
+            href: "https://scholarships.gov.in/",
+            external: true,
+          },
+          {
+            label: "SSP Link",
+            href: "https://ssp.postmatric.karnataka.gov.in/",
+            external: true,
+          },
+        ],
+      },
       { label: "Legal Aid Cell", href: "/student-corner/legal-aid" },
-      { label: "Anti-Ragging Cell", href: "/student-corner/anti-ragging" },
-      { label: "Grievance Redressal", href: "/student-corner/grievance-redressal" },
-      { label: "Human Rights Cell", href: "/student-corner/human-rights" },
-      { label: "Mediation Centre", href: "/student-corner/mediation-centre" },
-      { label: "Downloads & Documents", href: "/downloads" },
+      { label: "Anti Ragging Cell", href: "/student-corner/anti-ragging" },
+      {
+        label: "Girl Students Grievance Redressal Cell",
+        href: "/student-corner/girl-students-grievance",
+        children: [
+          {
+            label: "SC/ST Grievance Redressal Cell",
+            href: "/student-corner/sc-st-grievance",
+          },
+          {
+            label: "Prevention of Caste Based Discrimination Committee",
+            href: "/student-corner/grievance-redressal",
+          },
+          { label: "Human Rights Cell", href: "/student-corner/human-rights" },
+          { label: "Mediation Center", href: "/student-corner/mediation-centre" },
+        ],
+      },
     ],
   },
   {
@@ -97,6 +123,7 @@ export const MAIN_NAVIGATION: NavItem[] = [
       { label: "Announcements & Notices", href: "/announcements" },
     ],
   },
+  { label: "Alumni", href: "/alumni" },
   { label: "Contact Us", href: "/contact" },
 ];
 

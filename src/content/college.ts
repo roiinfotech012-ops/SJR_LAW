@@ -9,6 +9,8 @@ import type {
 export const COLLEGE_IDENTITY = {
   officialName: "Sri Jagadguru Renukacharya College of Law",
   kannadaName: "ಶ್ರೀ ಜಗದ್ಗುರು ರೇಣುಕಾಚಾರ್ಯ ಕಾನೂನು ಕಾಲೇಜು",
+  kannadaHeaderSubtitle:
+    "ಕರ್ನಾಟಕ ರಾಜ್ಯ ಕಾನೂನು ವಿಶ್ವವಿದ್ಯಾಲಯ, ಹುಬ್ಬಳ್ಳಿಗೆ ಸಂಯೋಜಿತ | ಭಾರತೀಯ ವಕೀಲರ ಪರಿಷತ್ತಿನಿಂದ ಮಾನ್ಯತೆ ಪಡೆದಿದೆ | ಸ್ಥಾಪನೆ: 1963 • ಬೆಂಗಳೂರಿನ ಮೊದಲ ಖಾಸಗಿ ಕಾನೂನು ಕಾಲೇಜು",
   displayName: "SJR College of Law",
   shortName: "SJRCL",
   establishedYear: 1963,
@@ -230,7 +232,7 @@ export const FACILITY_HIGHLIGHTS: FacilityHighlight[] = [
     title: "Moot Court Hall",
     description:
       "Dedicated moot court hall for practical advocacy sessions, mock trials, and inter-collegiate moot court preparation.",
-    image: "/assets/infrastructure/1.jpg",
+    image: "/assets/infrastructure/moot-court-hd.jpg",
     icon: "scale",
   },
   {

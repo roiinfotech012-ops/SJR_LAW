@@ -33,11 +33,11 @@ export default function MootCourtPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-6 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-[#EBE6E0]">
               <Image
-                src="/assets/infrastructure/1.jpg"
-                alt="Moot Court Hall at Sri Jagadguru Renukacharya College of Law"
+                src="/assets/infrastructure/moot-court-hd.jpg"
+                alt="Moot Court Session at Sri Jagadguru Renukacharya College of Law"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
             </div>
 

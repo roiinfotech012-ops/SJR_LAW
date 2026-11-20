@@ -257,6 +257,24 @@ export function AlumniRegistrationForm() {
         )}
       </div>
 
+      <div>
+        <label
+          htmlFor="alumni-photo"
+          className="block text-sm font-semibold text-[#5C4238] mb-1.5"
+        >
+          Photograph (Optional)
+        </label>
+        <input
+          id="alumni-photo"
+          type="file"
+          accept=".jpg,.jpeg,.png"
+          className="block w-full text-xs sm:text-sm text-[#5C4238] file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-[#177249]/10 file:text-[#177249] hover:file:bg-[#177249]/20 cursor-pointer"
+        />
+        <p className="mt-1 text-[11px] text-[#8D6E62]">
+          Acceptable file formats: .jpg, .jpeg, .png
+        </p>
+      </div>
+
       <button
         type="submit"
         disabled={isSubmitting}

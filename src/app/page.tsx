@@ -70,8 +70,8 @@ export default function HomePage() {
       {/* 3. Introduction to SJR College of Law */}
       <section className="py-16 lg:py-20 bg-gradient-to-br from-white via-slate-50 to-emerald-50/30">
         <div className="site-container">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-            <div className="lg:col-span-5 relative px-3 py-3">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
+            <div className="lg:col-span-5 relative p-3 flex">
               <div
                 className="absolute top-0 left-0 h-28 w-28 rounded-3xl border-2 border-[#177249]/50"
                 aria-hidden="true"
@@ -80,7 +80,7 @@ export default function HomePage() {
                 className="absolute bottom-0 right-0 h-28 w-28 rounded-3xl border-2 border-[#FF8C00]/60"
                 aria-hidden="true"
               />
-              <div className="relative aspect-[4/4] sm:aspect-[4/3] lg:aspect-[4/4] rounded-3xl overflow-hidden shadow-2xl bg-[#EBE6E0]">
+              <div className="relative w-full min-h-[380px] sm:min-h-[440px] lg:h-full rounded-3xl overflow-hidden shadow-2xl bg-[#EBE6E0]">
                 <Image
                   src={ABOUT_COLLEGE.campusImage}
                   alt="Sri Jagadguru Renukacharya College of Law campus in Bengaluru"
@@ -298,11 +298,11 @@ export default function HomePage() {
           <div className="bg-white rounded-2xl border border-[#DDD3C6] shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-12">
             <div className="lg:col-span-5 relative min-h-[260px] bg-[#EBE6E0]">
               <Image
-                src="/assets/infrastructure/1.jpg"
-                alt="Moot Court Hall at SJR College of Law"
+                src="/assets/infrastructure/moot-court-hd.jpg"
+                alt="Moot Court Session at SJR College of Law"
                 fill
                 sizes="(max-width: 1024px) 100vw, 42vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
             </div>
             <div className="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between">

@@ -154,7 +154,7 @@ export function HighlightsShowcase() {
             <Sparkles className="h-3.5 w-3.5 text-[#FF8C00]" aria-hidden="true" />
             Institutional Highlights
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0B1A4C] leading-tight tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#5C4238] leading-tight tracking-tight">
             Six Decades of Legal Excellence{" "}
             <span className="text-[#177249]">in the Heart of Bengaluru</span>
           </h2>
@@ -186,7 +186,7 @@ export function HighlightsShowcase() {
                   </span>
                 </div>
 
-                <p className="font-serif text-3xl sm:text-[34px] font-bold text-[#0B1A4C] leading-none tracking-tight">
+                <p className="text-3xl sm:text-[34px] font-bold text-[#0B1A4C] leading-none tracking-tight">
                   <CountUpNumber
                     target={stat.target}
                     prefix={stat.prefix}

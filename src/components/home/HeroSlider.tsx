@@ -56,7 +56,7 @@ export function HeroSlider() {
             src={s.image}
             alt={s.alt}
             fill
-            priority={idx === 0}
+            priority
             sizes="100vw"
             className="object-cover object-center scale-[1.03]"
           />
