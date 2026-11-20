@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  /* Extracted Reference Palette — SJR Institutional Design System */
+  --color-primary: #177249;
+  --color-primary-dark: #115838;
+  --color-secondary: #FF8C00;
+  --color-accent: #FFD900;
+  --color-navy: #0B1A4C;
+  --color-maroon: #7A1F1F;
+  --color-heading: #5C4238;
+  --color-muted-text: #8D6E62;
+  --color-gold: #B7860B;
+  --color-tricolor-orange: #FF6333;
+  --color-tricolor-green: #2F7F31;
+
+  --color-background: #FFFFFF;
+  --color-surface: #F8FAFC;
+  --color-cream: #FCF5E8;
+  --color-breadcrumb: #F7D8A4;
+  --color-text: #342419;
+  --color-border: #DDD3C6;
+  --color-destructive: #EF4444;
+
+  /* Layout Tokens */
+  --container-width: 1400px;
+  --header-height: 161px;
+  --section-spacing: 4rem;
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-brand-green: var(--color-primary);
+  --color-brand-green-dark: var(--color-primary-dark);
+  --color-brand-saffron: var(--color-secondary);
+  --color-brand-yellow: var(--color-accent);
+  --color-brand-navy: var(--color-navy);
+  --color-brand-maroon: var(--color-maroon);
+  --color-brand-brown: var(--color-heading);
+  --color-brand-brown-light: var(--color-muted-text);
+  --color-brand-gold: var(--color-gold);
+  --color-brand-tricolor-orange: var(--color-tricolor-orange);
+  --color-brand-tricolor-green: var(--color-tricolor-green);
+  --color-brand-cream: var(--color-cream);
+  --color-brand-breadcrumb: var(--color-breadcrumb);
+
+  --font-sans: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-kannada: var(--font-noto-kannada), "Noto Sans Kannada", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container matching reference max-width: 1400px */
+.site-container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Footer subtle white radial dot grid from reference */
+.footer-dot-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.9) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Marquee animation matching reference announcement strip */
+@keyframes sjr-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-sjr-marquee {
+  display: flex;
+  width: max-content;
+  animation: sjr-marquee 38s linear infinite;
+}
+
+.animate-sjr-marquee:hover,
+.animate-sjr-marquee:focus-within {
+  animation-play-state: paused;
+}
+
+/* Accessible focus rings */
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-sjr-marquee {
+    animation: none;
+  }
+}

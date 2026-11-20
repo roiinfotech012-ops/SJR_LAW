@@ -1,0 +1,36 @@
+legacy_path,new_route,redirect_type,notes
+/index,/,308,Legacy extensionless homepage
+/index.php,/,308,Legacy PHP homepage
+/best-law-colleges-in-karnataka,/about/sjr-education-society,308,Extensionless About SJR Education Society
+/best-law-colleges-in-karnataka.php,/about/sjr-education-society,308,Legacy PHP About SJR Education Society
+/sjr-edu-society,/about/college,308,Extensionless About SJR College of Law (legacy swapped slug)
+/sjr-edu-society.php,/about/college,308,Legacy PHP About SJR College of Law
+/sjr-educational-institutions,/about/our-institutes,308,Extensionless Our Institutes
+/sjr-educational-institutions.php,/about/our-institutes,308,Legacy PHP Our Institutes
+/principals-communique,/about/principals-message,308,Extensionless Principal's Message
+/principals-communique.php,/about/principals-message,308,Legacy PHP Principal's Message
+/faculty,/staff/teaching,308,Extensionless Teaching Faculty
+/faculty.php,/staff/teaching,308,Legacy PHP Teaching Faculty
+/sjr-law-faculty,/staff/teaching,308,Legacy footer/sitemap faculty link
+/non-teaching-staff.php,/staff/non-teaching,308,Legacy PHP Non-Teaching Staff
+/non-teaching-staff,/staff/non-teaching,308,Extensionless Non-Teaching Staff
+/llb-course-in-bangalore,/academics/llb,308,Extensionless 3-Year LL.B.
+/llb-course-in-bangalore.php,/academics/llb,308,Legacy PHP 3-Year LL.B.
+/ba-llb-in-bangalore,/academics/ba-llb,308,Extensionless 5-Year B.A. LL.B.
+/ba-llb-in-bangalore.php,/academics/ba-llb,308,Legacy PHP 5-Year B.A. LL.B.
+/additional-courses,/academics/additional-courses,308,Extensionless Additional Courses
+/additional-courses.php,/academics/additional-courses,308,Legacy PHP Additional Courses
+/sjr-law-college-admission,/admissions,308,Extensionless Admissions
+/sjr-law-college-admission.php,/admissions,308,Legacy PHP Admissions
+/infrastructure,/infrastructure,308,Extensionless Infrastructure (canonical)
+/infrastructure.php,/infrastructure,308,Legacy PHP Infrastructure
+/law-schools-in-bangalore,/academics/syllabus/ba-llb,308,Extensionless B.A. LL.B. Syllabus
+/law-schools-in-bangalore.php,/academics/syllabus/ba-llb,308,Legacy PHP B.A. LL.B. Syllabus
+/llb-syllabus,/academics/syllabus/llb,308,Extensionless LL.B. Syllabus
+/llb-syllabus.php,/academics/syllabus/llb,308,Legacy PHP LL.B. Syllabus
+/alumni-registration.php,/alumni,308,Legacy PHP Alumni Registration
+/testimonials.php,/testimonials,308,Legacy PHP Testimonials
+/committe-form.php,/student-corner/committees,308,Legacy empty PHP committees link
+/discrimination-committe.php,/student-corner/grievance-redressal,308,Legacy PHP Caste-Based Discrimination Committee
+/contact.php,/contact,308,Legacy PHP Contact Us
+/single-event.html,/events,308,Legacy event detail URL
