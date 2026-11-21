@@ -260,7 +260,7 @@ export function SiteHeader() {
                     <Link
                       key={item.label}
                       href={item.href}
-                      className={`px-2 xl:px-2.5 py-2 text-[13px] xl:text-sm font-medium rounded-md transition-colors duration-200 whitespace-nowrap ${
+                      className={`px-1.5 xl:px-2.5 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors duration-200 whitespace-nowrap ${
                         isActive
                           ? "text-[#FFD900] bg-white/10"
                           : "text-white hover:text-[#FFD900] hover:bg-white/10"
@@ -286,7 +286,7 @@ export function SiteHeader() {
                       onClick={() =>
                         setOpenDropdown(isOpen ? null : item.label)
                       }
-                      className={`inline-flex items-center gap-0.5 px-2 xl:px-2.5 py-2 text-[13px] xl:text-sm font-medium rounded-md transition-colors duration-200 whitespace-nowrap cursor-pointer ${
+                      className={`inline-flex items-center gap-0.5 px-1.5 xl:px-2.5 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors duration-200 whitespace-nowrap cursor-pointer ${
                         isActive || isOpen
                           ? "text-[#FFD900] bg-white/10"
                           : "text-white hover:text-[#FFD900] hover:bg-white/10"

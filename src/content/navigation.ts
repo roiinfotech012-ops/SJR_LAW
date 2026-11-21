@@ -30,6 +30,14 @@ export const MAIN_NAVIGATION: NavItem[] = [
     ],
   },
   {
+    label: "Syllabus",
+    href: "/academics/syllabus/ba-llb",
+    children: [
+      { label: "BA LLB Syllabus", href: "/academics/syllabus/ba-llb" },
+      { label: "LLB Syllabus", href: "/academics/syllabus/llb" },
+    ],
+  },
+  {
     label: "Campus Life",
     href: "/campus-life/moot-court",
     children: [
