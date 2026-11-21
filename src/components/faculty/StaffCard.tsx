@@ -26,9 +26,6 @@ export function StaffCard({ member }: { member: StaffMember }) {
           <p className="text-xs text-[#5C4238] font-medium">
             {member.qualification}
           </p>
-          {member.note && (
-            <p className="text-[11px] text-[#8D6E62] mt-1">{member.note}</p>
-          )}
         </div>
       </div>
     </article>

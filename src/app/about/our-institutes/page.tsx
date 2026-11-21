@@ -1,7 +1,6 @@
 import { Building2, MapPin, Phone } from "lucide-react";
 import { SISTER_INSTITUTES } from "@/content/college";
 import { PageHero } from "@/components/shared/PageHero";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -25,17 +24,6 @@ export default function OurInstitutesPage() {
 
       <section className="py-14 lg:py-16 bg-slate-50">
         <div className="site-container max-w-6xl mx-auto">
-          <div className="mb-8">
-            <VerificationNotice title="Source Directory Note">
-              The legacy &ldquo;Our Institutes&rdquo; page lists 10 institutions
-              (while the legacy homepage mentioned &ldquo;11 Group
-              Institutes&rdquo; and the Society history page mentioned
-              &ldquo;nine institutions&rdquo;). All 10 published institutional
-              records are preserved verbatim below pending confirmation of any
-              newer institutions or updated landline numbers.
-            </VerificationNotice>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {SISTER_INSTITUTES.map((inst) => (
               <article
@@ -67,11 +55,6 @@ export default function OurInstitutesPage() {
                         {inst.telefax ? ` • Telefax: ${inst.telefax}` : ""}
                       </span>
                     </p>
-                    {inst.note && (
-                      <p className="mt-2 text-xs text-amber-800 bg-amber-50 rounded px-2.5 py-1 inline-block">
-                        {inst.note}
-                      </p>
-                    )}
                   </div>
                 </div>
               </article>

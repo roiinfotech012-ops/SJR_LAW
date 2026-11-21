@@ -94,7 +94,6 @@ export const TEACHING_FACULTY: StaffMember[] = [
     category: "teaching-fulltime",
     image: "/assets/faculty/guest3.jpg",
     sourceUrl: "https://www.sjrlawcollege.in/faculty.php",
-    note: "Homepage listed 'M.A. Economics'; faculty.php listed 'M.A, B.Ed, M.Phil, Ph.D'. Both preserved.",
   },
   {
     id: "smt-gangambika-ms",

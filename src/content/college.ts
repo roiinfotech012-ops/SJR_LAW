@@ -82,10 +82,8 @@ export const HERO_AT_A_GLANCE: HighlightMetric[] = [
   {
     value: "Est. 1963",
     label: "LEGAL LEGACY",
-    sublabel: "60+ Years (Source archive: 57+)",
+    sublabel: "Over Six Decades of Excellence",
     icon: "award",
-    verificationNote:
-      "Legacy site text says '57+ Years of Legacy' (last updated ~2021). Establishment year is 1963.",
   },
   {
     value: "3000+",
@@ -98,8 +96,6 @@ export const HERO_AT_A_GLANCE: HighlightMetric[] = [
     label: "SJR GROUP INSTITUTES",
     sublabel: "Under SJR Education Society",
     icon: "building",
-    verificationNote:
-      "Homepage states '11 Group Institutes', Society page states 'nine', and Our Institutes lists 10.",
   },
 ];
 
@@ -109,7 +105,7 @@ export const ABOUT_COLLEGE = {
     "Sri Jagadguru Renukacharya College of Law (SJR College of Law) was the first ever private law college established in Bangalore. It was established under the aegis of the Mysore University in the year 1963. It was founded by the eminent legal educationalist Prof. P. Shivashankar.",
   paragraphs: [
     "Sri Jagadguru Renukacharya College of Law (SJR College of Law) was the first ever private law college established in Bangalore. It was established under the aegis of the Mysore University in the year 1963. It was founded by the eminent legal educationalist Prof. P. Shivashankar. The college initially offered a 3-year LL.B. degree; however, in 1999 the college introduced the 5-year B.A. LL.B. degree. After the exclusive Law University, Karnataka State Law University (KSLU), came into existence, SJR College of Law is affiliated with it. We are also recognised by the Bar Council of India, in the academic year 1999–2000.",
-    "This institution, established in 1963 (recorded as 57+ years old in the legacy archive), has a history of producing some of the stalwarts in the Judicial, Litigation, and Corporate sectors. The institution, however, does not rest on the laurels of the past. The new is not only encouraged but embraced. Classrooms here are equipped with all modern facilities, and the faculty applies modern and innovative methodologies to teach the students.",
+    "This institution, established in 1963, has a history of producing some of the stalwarts in the Judicial, Litigation, and Corporate sectors. The institution, however, does not rest on the laurels of the past. The new is not only encouraged but embraced. Classrooms here are equipped with all modern facilities, and the faculty applies modern and innovative methodologies to teach the students.",
     "Apart from the facilities that are inherent to the college, the location also plays a key role. The college is in the heart of the city. It is close to the High Court, the Legislative Assembly, and is the transport hub of Bengaluru. This makes it convenient for students to apply for internship positions which the college encourages students to undertake.",
   ],
   campusImage: "/assets/campus/about-sjrcl.jpg",
@@ -123,13 +119,13 @@ export const ABOUT_SOCIETY = {
     "Jagadguru Renukacharya Educational Institutions was established in the year 1945 under the name of Veerashaiva Education Society. Initially the institution was affiliated to the University of Mysore, which was the first university in the erstwhile State of Mysore. The University of Mysore was one of the universities that permitted private managements to commence colleges in under-graduate studies.",
     "Veerashaiva Education Society was one of the first to commence an intermediate college in the private sector. This was possible because of the generosity of a philanthropist, a member of the Veerashaiva Education Society, Shroff B. Basappa. In recognition and acknowledgement of this unstinted generosity the new college was named Basappa Intermediate College.",
     "The next significant milestone was in 1955 when the college became a first-grade college. This was due to the gift of land, housing the present college building, belonging to His Holiness, the Jagadguru of Sri Rambhapuri Peeta. His Holiness gifted this to the society and, to honour this great and significant contribution, the Society was rechristened Sri Jagadguru Renukacharya Education Society and Basappa Intermediate College was renamed Sri Jagadguru Renukacharya College of Science, Arts and Commerce.",
-    "With its humble beginning, the Society has metamorphosed into a colossal epicentre serving the cause of education for over seven decades (recorded as '70 odd glorious years' in the legacy archive).",
+    "With its humble beginning, the Society has metamorphosed into a colossal epicentre serving the cause of education for over seven glorious decades.",
     "The Society has changed and shaped the education sector in Karnataka and is an institution of historical importance that has kept pace with the changing times and needs of education. The Society has been the crucible that has contributed by producing great citizens in the form of administrators, advocates, judges, and public leaders. In keeping with its mission, the Society moulds the minds of the youth to create better citizens of India.",
   ],
   mission:
     "At SJR College of Law our mission is to provide education that will equip our students to deal with the practicalities of life. We believe in instilling in our students not only the knowledge of law but the passion for law. We also believe in aiding our students to be well-rounded individuals who contribute to society proactively.",
   whySjrcl: [
-    "Sri Jagadguru Renukacharya College of Law is one of the most reputed institutions of legal education, established in 1963 (legacy archive notes 57+ years).",
+    "Sri Jagadguru Renukacharya College of Law is one of the most reputed institutions of legal education, established in 1963.",
     "Affiliated to Karnataka State Law University, Hubballi and recognised by the Bar Council of India.",
     "Experienced faculty with specialised domain knowledge and student-oriented mentorship.",
     "Excellent infrastructure facilities including Moot Court, well-stocked Law & Digital Library, soundproof Auditorium, and well-equipped Classrooms.",
@@ -166,8 +162,6 @@ export const PRINCIPALS_MESSAGE = {
     "Once again, I welcome you to become part of SJR College of Law and I wish you all the best for all your future endeavours.",
   ],
   sourceUrl: "https://www.sjrlawcollege.in/principals-communique.php",
-  verificationNote:
-    "Published from legacy source (last sitemap update: July 2021). Verify current Principal tenure with the college office.",
 };
 
 export const SISTER_INSTITUTES: SisterInstitute[] = [
@@ -180,7 +174,7 @@ export const SISTER_INSTITUTES: SisterInstitute[] = [
   {
     name: "SJR College of Law",
     address: "#9, Race Course Road, Bangalore – 560 009",
-    phone: "+91-80-22263468 (Office landline also listed as 080-29563468)",
+    phone: "+91-80-22263468 / 080-29563468",
     telefax: "+91-80-22250545",
   },
   {
@@ -207,7 +201,6 @@ export const SISTER_INSTITUTES: SisterInstitute[] = [
     name: "SJR PU College for Women",
     address: "#1/D, 4th 'M' Block, Rajajinagar, Bangalore – 560 010",
     phone: "+91-80-233011736",
-    note: "Legacy source number preserved as published; verify digit count.",
   },
   {
     name: "SJR Public School",

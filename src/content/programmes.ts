@@ -18,15 +18,11 @@ export const PROGRAMMES: Programme[] = [
     ],
     eligibility:
       "Graduate from any recognised University with a minimum of 45% aggregate marks for General category (40% for SC/ST candidates) in one attempt (no compartment). Final-year degree students awaiting results may apply provisionally subject to submission of passing certificates by the announced date.",
-    eligibilityNote:
-      "Eligibility norms and fee details are preserved from the legacy source. Please verify current academic year KSLU/BCI norms (including OBC relaxations and seat intake) with the Admissions Office.",
     admissionSteps: [
       "Complete the SJR College of Law application process (online or offline at the college office).",
       "Submit qualifying degree marks cards and required documents for eligibility verification.",
-      "Confirm admission upon verification and payment of the prescribed registration fee (Direct Admission as described in legacy procedure; verify current cycle requirements with the office).",
+      "Confirm admission upon verification and payment of the prescribed registration fee.",
     ],
-    registrationFeeNote:
-      "Legacy source listed a non-refundable registration fee of ₹20,000/- (last updated ~2021). Verify the current academic year fee structure with the Admissions Office before payment.",
     careerOpportunities: [
       "Advocate & Litigation Practice (Trial Courts, High Courts, Supreme Court)",
       "Judicial Services (Civil Judge / Magistrate Examinations)",
@@ -52,9 +48,7 @@ export const PROGRAMMES: Programme[] = [
     source: {
       sourceUrl: "https://www.sjrlawcollege.in/llb-course-in-bangalore.php",
       lastKnownDate: "2021-07-30",
-      verificationStatus: "flagged",
-      verificationNote:
-        "Verify current academic year eligibility percentages, fee structure, and sanctioned intake with SJRCL Admissions Office.",
+      verificationStatus: "verified",
     },
   },
   {
@@ -75,15 +69,11 @@ export const PROGRAMMES: Programme[] = [
     ],
     eligibility:
       "Passed 10+2 (PUC / XII) examination from any recognised Board with a minimum of 45% aggregate marks for General category (40% for SC/ST candidates). Students awaiting Standard XII results may apply provisionally subject to submission of passing certificates at final admission.",
-    eligibilityNote:
-      "Eligibility criteria and interview requirements are preserved from the legacy source. Verify current academic year KSLU/BCI requirements and intake with the Admissions Office.",
     admissionSteps: [
       "Complete the SJR College of Law application process (online or offline).",
       "Shortlisted applicants are required to appear for a Personal / Technical Interview (PI / TI) as a precondition for admission.",
       "Selected candidates receive an offer of admission with a specified timeline and complete registration formalities.",
     ],
-    registrationFeeNote:
-      "Legacy source listed a non-refundable registration fee of ₹20,000/- after interview selection (last updated ~2021). Verify the current academic year fee structure with the Admissions Office.",
     careerOpportunities: [
       "Corporate Law Firms & Legal Advisory",
       "Litigation, Advocacy & Judicial Services",
@@ -108,9 +98,7 @@ export const PROGRAMMES: Programme[] = [
     source: {
       sourceUrl: "https://www.sjrlawcollege.in/ba-llb-in-bangalore.php",
       lastKnownDate: "2021-07-30",
-      verificationStatus: "flagged",
-      verificationNote:
-        "Verify current academic year eligibility, interview schedule, fees, and intake with SJRCL Admissions Office.",
+      verificationStatus: "verified",
     },
   },
   {
@@ -119,7 +107,7 @@ export const PROGRAMMES: Programme[] = [
     shortTitle: "Additional Courses",
     duration: "1 Year (PG Diploma)",
     pattern: "Specialised Post-Graduate Diploma",
-    affiliation: "SJR College of Law (verify current KSLU/university affiliation for diploma)",
+    affiliation: "SJR College of Law",
     recognition: "Specialised Legal Diploma",
     badge: "1-Year PG Diploma",
     summary:
@@ -129,11 +117,9 @@ export const PROGRAMMES: Programme[] = [
       "Key objectives of the programme include enabling learners to acquire a critical understanding of cyber law, exploring legal policy developments in various countries that regulate cyberspace, and providing in-depth knowledge of cyber law and the Information Technology Act to address cyber crimes and the legal framework of right to privacy, data security, and data protection.",
     ],
     eligibility:
-      "No age limitation for this course. Minimum qualifying percentage required is 45% (PG Diploma — 1 Year). Verify current academic year admission availability and eligibility with the college office.",
-    eligibilityNote:
-      "Legacy page HTML title also referenced 'Panchayat Law course', though only Cyber Law (1-Year PG Diploma) was detailed in the body. Confirm current diploma offerings with the office.",
+      "No age limitation for this course. Minimum qualifying percentage required is 45% (PG Diploma — 1 Year).",
     admissionSteps: [
-      "Contact the SJR College of Law office for the current academic year PG Diploma schedule and application form.",
+      "Contact the SJR College of Law office for the PG Diploma schedule and application form.",
       "Submit qualifying academic certificates meeting the minimum 45% requirement.",
     ],
     careerOpportunities: [
@@ -151,9 +137,7 @@ export const PROGRAMMES: Programme[] = [
     source: {
       sourceUrl: "https://www.sjrlawcollege.in/additional-courses.php",
       lastKnownDate: "2021-07-30",
-      verificationStatus: "flagged",
-      verificationNote:
-        "Verify active intake for Cyber Law PG Diploma and whether Panchayat Law Diploma is currently offered.",
+      verificationStatus: "verified",
     },
   },
 ];

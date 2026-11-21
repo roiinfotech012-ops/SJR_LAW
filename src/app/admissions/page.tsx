@@ -3,7 +3,6 @@ import { CheckCircle2, Phone, Mail, FileText } from "lucide-react";
 import { PROGRAMMES } from "@/content/programmes";
 import { CONTACT_INFO } from "@/content/contact";
 import { PageHero } from "@/components/shared/PageHero";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 import { EnquiryForm } from "@/components/forms/EnquiryForm";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -28,29 +27,6 @@ export default function AdmissionsPage() {
 
       <section className="py-14 lg:py-16 bg-white">
         <div className="site-container max-w-6xl mx-auto space-y-10">
-          <VerificationNotice title="Important Notice on Current Academic Year Dates & Fees">
-            The legacy website displayed an outdated 2023–24 admissions banner
-            and a legacy non-refundable registration fee figure of ₹20,000/-
-            (last updated ~2021). Sanctioned seat intake numbers were not
-            published on the legacy portal. Please confirm the current academic
-            year admission schedule, fee structure, KSLU/BCI eligibility norms,
-            and seat availability directly with the Admissions Office at{" "}
-            <a
-              href={CONTACT_INFO.phones.principalAndAdmissions[0].href}
-              className="font-semibold underline"
-            >
-              {CONTACT_INFO.phones.principalAndAdmissions[0].display}
-            </a>{" "}
-            or{" "}
-            <a
-              href={CONTACT_INFO.emails[1].href}
-              className="font-semibold underline"
-            >
-              {CONTACT_INFO.emails[1].address}
-            </a>
-            .
-          </VerificationNotice>
-
           {/* Two Programme Admission Cards */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {[ballb, llb].map((prog) => (
@@ -90,12 +66,6 @@ export default function AdmissionsPage() {
                       </li>
                     ))}
                   </ul>
-
-                  {prog.registrationFeeNote && (
-                    <p className="mt-4 text-xs text-[#5C4238] bg-[#FCF5E8] border border-amber-200 rounded-lg p-3">
-                      {prog.registrationFeeNote}
-                    </p>
-                  )}
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-gray-100 flex flex-wrap gap-3">

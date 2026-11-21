@@ -1,7 +1,6 @@
 import { Target, Compass, BookOpen } from "lucide-react";
 import { ABOUT_SOCIETY, PRINCIPALS_MESSAGE } from "@/content/college";
 import { PageHero } from "@/components/shared/PageHero";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -48,10 +47,6 @@ export default function VisionMissionPage() {
               <p className="text-sm sm:text-base text-[#342419] leading-relaxed">
                 &ldquo;{PRINCIPALS_MESSAGE.motto}&rdquo;
               </p>
-              <p className="mt-3 text-xs text-[#8D6E62]">
-                Excerpted from the Principal&apos;s Communiqué on the official
-                source website.
-              </p>
             </div>
           </div>
 
@@ -68,15 +63,6 @@ export default function VisionMissionPage() {
               ))}
             </div>
           </div>
-
-          <VerificationNotice title="Source Audit Note">
-            In the legacy website navigation, the &ldquo;Vision-Mission&rdquo;
-            menu item had an empty link. The official Mission statement above
-            was migrated from the SJR Education Society page, and the
-            institutional aim was migrated from the Principal&apos;s Communiqué.
-            If the college maintains a separate formal Vision statement, it can
-            be added upon institutional confirmation.
-          </VerificationNotice>
         </div>
       </section>
     </>

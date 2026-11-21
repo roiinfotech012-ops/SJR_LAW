@@ -2,7 +2,6 @@ import { MapPin, Phone, Mail, ExternalLink } from "lucide-react";
 import { CONTACT_INFO } from "@/content/contact";
 import { PageHero } from "@/components/shared/PageHero";
 import { EnquiryForm } from "@/components/forms/EnquiryForm";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -113,10 +112,6 @@ export default function ContactPage() {
                   ))}
                 </div>
               </div>
-
-              <VerificationNotice title="Contact Directory Verification Note">
-                {CONTACT_INFO.phones.legacyNotes}
-              </VerificationNotice>
             </div>
 
             {/* Right Enquiry Form */}

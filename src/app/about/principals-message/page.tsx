@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Quote } from "lucide-react";
 import { PRINCIPALS_MESSAGE } from "@/content/college";
 import { PageHero } from "@/components/shared/PageHero";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -74,10 +73,6 @@ export default function PrincipalsMessagePage() {
                   </p>
                 </div>
               </div>
-
-              <VerificationNotice>
-                {PRINCIPALS_MESSAGE.verificationNote}
-              </VerificationNotice>
             </div>
           </div>
         </div>

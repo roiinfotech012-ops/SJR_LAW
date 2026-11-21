@@ -40,7 +40,7 @@ const STATS: AnimatedStat[] = [
     target: 1963,
     prefix: "Est. ",
     title: "Academic Legacy",
-    subtitle: "Over 6 decades (Legacy archive: 57+ yrs)",
+    subtitle: "Over Six Decades of Legal Education",
     icon: "award",
   },
   {

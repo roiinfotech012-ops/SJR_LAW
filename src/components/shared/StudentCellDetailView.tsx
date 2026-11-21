@@ -3,7 +3,6 @@ import { ExternalLink, ShieldCheck } from "lucide-react";
 import type { StudentCell } from "@/types/content";
 import { STUDENT_CELLS } from "@/content/committees";
 import { PageHero } from "@/components/shared/PageHero";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 import { GrievanceForm } from "@/components/forms/GrievanceForm";
 
 export function StudentCellDetailView({ cell }: { cell: StudentCell }) {
@@ -58,15 +57,6 @@ export function StudentCellDetailView({ cell }: { cell: StudentCell }) {
               <div className="pt-2">
                 <GrievanceForm />
               </div>
-            )}
-
-            {cell.sourceStatus === "source-empty-gap" && (
-              <VerificationNotice title="Official Committee Roster Pending">
-                No committee member names or dedicated subpage content were
-                published for this cell on the legacy website. Official
-                current-year faculty coordinator and member names will be added
-                once verified by SJR College of Law administration.
-              </VerificationNotice>
             )}
           </div>
 

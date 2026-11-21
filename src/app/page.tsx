@@ -275,9 +275,6 @@ export default function HomePage() {
                     <span>Governance</span>
                   </Link>
                 </div>
-                <span className="text-[11px] text-[#8D6E62]">
-                  Source archive record — verify current tenure with office
-                </span>
               </div>
             </div>
           </div>
@@ -570,12 +567,6 @@ export default function HomePage() {
               </div>
 
               <div className="rounded-2xl border border-[#DDD3C6] bg-slate-50/80 p-5 space-y-4">
-                <p className="text-xs text-[#5C4238] bg-[#FCF5E8] border border-amber-200 rounded-lg px-3 py-2">
-                  <strong>Archive Notice:</strong> No upcoming events are
-                  currently published on the source portal. Historical events
-                  from the college archive are preserved below.
-                </p>
-
                 {EVENTS.map((ev) => (
                   <article
                     key={ev.id}

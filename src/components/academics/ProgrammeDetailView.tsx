@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 import type { Programme } from "@/types/content";
 import { PageHero } from "@/components/shared/PageHero";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 
 export function ProgrammeDetailView({ programme }: { programme: Programme }) {
   return (
@@ -95,11 +94,6 @@ export function ProgrammeDetailView({ programme }: { programme: Programme }) {
                 <p className="text-sm sm:text-base text-[#342419] leading-relaxed">
                   {programme.eligibility}
                 </p>
-                {programme.eligibilityNote && (
-                  <p className="mt-3 text-xs text-[#5C4238] bg-white/80 rounded-lg p-3 border border-amber-200">
-                    <strong>Note:</strong> {programme.eligibilityNote}
-                  </p>
-                )}
               </div>
 
               {/* Admission Process */}
@@ -122,13 +116,6 @@ export function ProgrammeDetailView({ programme }: { programme: Programme }) {
                     </li>
                   ))}
                 </ol>
-                {programme.registrationFeeNote && (
-                  <div className="mt-4">
-                    <VerificationNotice title="Time-Sensitive Fee Notice">
-                      {programme.registrationFeeNote}
-                    </VerificationNotice>
-                  </div>
-                )}
               </div>
 
               {/* Career Opportunities */}

@@ -64,8 +64,8 @@ export default function AlumniPage() {
                   Join the SJRCL Alumni Telegram Community
                 </h2>
                 <p className="text-xs sm:text-sm text-white/85 mt-1">
-                  Official alumni group link migrated from the legacy alumni
-                  registration page.
+                  Connect with fellow graduates through the official SJR College
+                  of Law Alumni group.
                 </p>
               </div>
             </div>

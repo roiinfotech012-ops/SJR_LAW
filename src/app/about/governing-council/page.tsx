@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 import { COLLEGE_IDENTITY } from "@/content/college";
-import { CONTACT_INFO } from "@/content/contact";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -32,29 +30,25 @@ export default function GoverningCouncilPage() {
             </h2>
             <p className="text-sm sm:text-base text-[#342419] leading-relaxed">
               Sri Jagadguru Renukacharya College of Law operates under the aegis
-              of the{" "}
-              <strong>{COLLEGE_IDENTITY.societyName}</strong>, established in
-              1945 (originally as Veerashaiva Education Society and rechristened
-              in 1955 in honour of His Holiness, the Jagadguru of Sri Rambhapuri
-              Peeta).
+              of the <strong>{COLLEGE_IDENTITY.societyName}</strong>, established
+              in 1945 (originally as Veerashaiva Education Society and
+              rechristened in 1955 in honour of His Holiness, the Jagadguru of
+              Sri Rambhapuri Peeta).
             </p>
           </div>
 
-          <VerificationNotice title="Governing Council Roster Pending Institutional Input">
-            No Governing Council member roster or office-bearer directory was
-            published on the legacy website (<code>www.sjrlawcollege.in</code>).
-            In accordance with strict factual accuracy standards, no member
-            names have been fabricated. Official Governing Council member names
-            and designations will be published here upon receipt from the
-            college office ({CONTACT_INFO.emails[0].address}).
-          </VerificationNotice>
-
-          <div>
+          <div className="flex flex-wrap gap-3">
             <Link
               href="/about/sjr-education-society"
               className="inline-flex items-center gap-2 bg-[#177249] hover:bg-[#115838] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
             >
               Read About SJR Education Society
+            </Link>
+            <Link
+              href="/about/presidents-message"
+              className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-[#0B1A4C] border border-[#DDD3C6] text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
+            >
+              Leadership Messages
             </Link>
           </div>
         </div>

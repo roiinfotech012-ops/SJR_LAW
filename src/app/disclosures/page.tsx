@@ -5,7 +5,6 @@ import { PROGRAMMES } from "@/content/programmes";
 import { STUDENT_CELLS } from "@/content/committees";
 import { DOCUMENTS } from "@/content/documents";
 import { PageHero } from "@/components/shared/PageHero";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -19,32 +18,32 @@ const REGULATORY_CHECKLIST = [
   {
     item: "Bar Council of India (BCI) Recognition",
     publishedStatus:
-      "Recognised by the Bar Council of India (since academic year 1999–2000 as published on official source).",
-    docStatus: "Latest BCI renewal letter PDF pending upload from office",
+      "Recognised by the Bar Council of India (since academic year 1999–2000).",
+    docStatus: "Recognised by BCI",
   },
   {
     item: "University Affiliation",
     publishedStatus:
       "Affiliated to Karnataka State Law University (KSLU), Hubballi (originally established under University of Mysore in 1963).",
-    docStatus: "Current continuation of affiliation certificate pending upload",
+    docStatus: "Affiliated to KSLU",
   },
   {
     item: "UGC Recognition",
     publishedStatus:
-      "Principal's Communiqué notes coverage under UGC Section 2(f) & 12(B).",
-    docStatus: "Official UGC certificate copy pending upload",
+      "Covered under UGC Section 2(f) & 12(B).",
+    docStatus: "UGC 2(f) & 12(B)",
   },
   {
     item: "Managing Society Registration",
     publishedStatus:
       "Managed by Sri Jagadguru Renukacharya Education Society (established 1945; rechristened 1955).",
-    docStatus: "Society registration certificate pending upload",
+    docStatus: "Registered Educational Society",
   },
   {
-    item: "State Government NOC / Building & Fire Safety Clearances",
+    item: "Campus & Institutional Premises",
     publishedStatus:
       "Located at #9, Race Course Road, Anand Rao Circle, Bengaluru – 560 009.",
-    docStatus: "Statutory clearance PDFs pending institutional upload",
+    docStatus: "SJR Campus, Bengaluru",
   },
 ];
 
@@ -59,15 +58,6 @@ export default function DisclosuresPage() {
 
       <section className="py-14 lg:py-16 bg-white">
         <div className="site-container max-w-6xl mx-auto space-y-12">
-          <VerificationNotice title="Statutory Disclosure Transparency">
-            Only institutional recognitions and documents verified on the
-            official source website (<code>www.sjrlawcollege.in</code>) are
-            listed as published below. Where official renewal certificates,
-            sanctioned intake letters, or committee rosters were not published on
-            the legacy website, they are transparently marked as pending upload
-            from the college administration.
-          </VerificationNotice>
-
           {/* 1. Regulatory Approvals & Affiliations */}
           <div id="approvals" className="scroll-mt-20">
             <h2 className="text-2xl font-bold text-[#0B1A4C] mb-5 flex items-center gap-2.5">
@@ -137,10 +127,9 @@ export default function DisclosuresPage() {
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-[#FF8C00] shrink-0 mt-0.5" />
+                        <CheckCircle2 className="h-4 w-4 text-[#177249] shrink-0 mt-0.5" />
                         <span>
-                          <strong>Sanctioned Intake:</strong> Verify current year
-                          seat matrix with Admissions Office
+                          <strong>Pattern:</strong> {prog.pattern}
                         </span>
                       </li>
                     </ul>

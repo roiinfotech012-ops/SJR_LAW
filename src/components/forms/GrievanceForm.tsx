@@ -72,8 +72,7 @@ export function GrievanceForm() {
           Lodge a Grievance / Complaint
         </h3>
         <p className="text-xs sm:text-sm text-[#5C4238] mt-1">
-          Migrated from the Prevention of Caste-Based Discrimination Committee
-          complaint form. All fields marked with * are required.
+          Submit your grievance below. All fields marked with * are required.
         </p>
       </div>
 

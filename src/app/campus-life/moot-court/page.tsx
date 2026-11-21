@@ -4,7 +4,6 @@ import { Scale, CheckCircle2, Quote, ChevronRight } from "lucide-react";
 import { ABOUT_SOCIETY } from "@/content/college";
 import { TESTIMONIALS } from "@/content/testimonials";
 import { PageHero } from "@/components/shared/PageHero";
-import { VerificationNotice } from "@/components/shared/VerificationNotice";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -94,12 +93,6 @@ export default function MootCourtPage() {
               </div>
             </div>
           )}
-
-          <VerificationNotice title="Moot Court Committee & Competition Calendar">
-            Current academic year Moot Court Committee members, competition
-            notifications, and results will be published here once supplied by
-            the SJR College of Law administration.
-          </VerificationNotice>
 
           <div className="flex flex-wrap gap-3">
             <Link
