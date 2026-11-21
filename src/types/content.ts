@@ -152,6 +152,9 @@ export interface StudentCell {
   shortTitle: string;
   summary: string;
   description: string[];
+  objectives?: string[];
+  activities?: { title: string; detail: string }[];
+  procedure?: string[];
   hasComplaintForm?: boolean;
   externalPortals?: { label: string; url: string; description: string }[];
   sourceStatus: "migrated" | "source-empty-gap";
