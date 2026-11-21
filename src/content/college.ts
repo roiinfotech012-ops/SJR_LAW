@@ -24,7 +24,7 @@ export const COLLEGE_IDENTITY = {
   logoPath: "/assets/branding/sjre.png",
   leftEmblemPath: "/assets/branding/sjr-emblem-left.png",
   rightEmblemPath: "/assets/branding/sjr-emblem-right.png",
-  faviconPath: "/assets/branding/favicon.png",
+  faviconPath: "/assets/branding/sjre.png",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sjrlawcollege.in",
   legacyMetaDescription:
     "Sri Jagadguru Renukacharya College of Law (SJR College of Law), Bengaluru — established in 1963 as the first private law college in Bangalore, affiliated to Karnataka State Law University (KSLU), Hubballi and recognised by the Bar Council of India (BCI).",

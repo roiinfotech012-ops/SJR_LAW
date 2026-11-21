@@ -38,6 +38,7 @@ export const metadata: Metadata = {
   icons: {
     icon: COLLEGE_IDENTITY.faviconPath,
     shortcut: COLLEGE_IDENTITY.faviconPath,
+    apple: COLLEGE_IDENTITY.faviconPath,
   },
   openGraph: {
     type: "website",
