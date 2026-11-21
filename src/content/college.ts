@@ -241,7 +241,7 @@ export const FACILITY_HIGHLIGHTS: FacilityHighlight[] = [
     title: "Soundproof Auditorium",
     description:
       "Well-equipped soundproof auditorium hosting national seminars, guest lectures, legal symposiums, and cultural events.",
-    image: "/assets/infrastructure/3.jpg",
+    image: "/assets/infrastructure/4.jpg",
     icon: "mic",
   },
   {
@@ -249,7 +249,7 @@ export const FACILITY_HIGHLIGHTS: FacilityHighlight[] = [
     title: "Modern Classrooms",
     description:
       "Spacious, well-equipped classrooms designed for interactive legal pedagogy, presentations, and case-study discussions.",
-    image: "/assets/infrastructure/4.jpg",
+    image: "/assets/infrastructure/7.jpg",
     icon: "building",
   },
   {
@@ -257,7 +257,7 @@ export const FACILITY_HIGHLIGHTS: FacilityHighlight[] = [
     title: "Indoor & Outdoor Sports",
     description:
       "Sports facilities supporting student participation in KSLU inter-collegiate athletics meets and extra-curricular tournaments.",
-    image: "/assets/infrastructure/5.jpg",
+    image: "/assets/infrastructure/12.jpg",
     icon: "trophy",
   },
   {
@@ -273,7 +273,7 @@ export const FACILITY_HIGHLIGHTS: FacilityHighlight[] = [
     title: "Seminar & Workshop Facilities",
     description:
       "Academic spaces supporting special lectures, legal workshops, debates, and student society activities.",
-    image: "/assets/infrastructure/7.jpg",
+    image: "/assets/infrastructure/5.jpg",
     icon: "building",
   },
   {
@@ -281,7 +281,7 @@ export const FACILITY_HIGHLIGHTS: FacilityHighlight[] = [
     title: "Campus & Student Amenities",
     description:
       "Accessible campus environment supporting student committees, legal aid initiatives, and holistic legal education.",
-    image: "/assets/infrastructure/8.jpg",
+    image: "/assets/infrastructure/14.jpg",
     icon: "scale",
   },
 ];
