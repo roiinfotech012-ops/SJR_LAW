@@ -23,9 +23,7 @@ export const enquirySchema = z.object({
     .min(10, "Please provide at least 10 characters in your message.")
     .max(2000, "Message must be under 2000 characters."),
   consent: z.literal(true, {
-    errorMap: () => ({
-      message: "Please confirm consent so the college office may respond to your enquiry.",
-    }),
+    error: "Please confirm consent so the college office may respond to your enquiry.",
   }),
   website: z.string().max(0).optional(), // Honeypot field
 });

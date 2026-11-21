@@ -1,6 +1,17 @@
 import type { NextConfig } from "next";
 
+const allowedHosts = (process.env.ALLOWED_HOSTS ?? "localhost,127.0.0.1")
+  .split(",")
+  .map((host) => host.trim())
+  .filter(Boolean);
+
 const nextConfig: NextConfig = {
+  allowedDevOrigins: allowedHosts,
+  experimental: {
+    serverActions: {
+      allowedOrigins: allowedHosts,
+    },
+  },
   images: {
     unoptimized: true,
   },

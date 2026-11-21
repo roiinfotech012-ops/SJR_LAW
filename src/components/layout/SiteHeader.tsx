@@ -19,15 +19,17 @@ import { MAIN_NAVIGATION } from "@/content/navigation";
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const [prevPathname, setPrevPathname] = useState(pathname);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const navRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname);
     setMobileOpen(false);
     setOpenDropdown(null);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {

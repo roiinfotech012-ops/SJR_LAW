@@ -88,11 +88,7 @@ function CountUpNumber({
   const [value, setValue] = useState(prefersReducedMotion ? target : 0);
 
   useEffect(() => {
-    if (!start) return;
-    if (prefersReducedMotion) {
-      setValue(target);
-      return;
-    }
+    if (!start || prefersReducedMotion) return;
 
     const duration = target > 500 ? 1300 : 900;
     const startVal = target === 1963 ? 1900 : 0;
@@ -112,7 +108,10 @@ function CountUpNumber({
     return () => cancelAnimationFrame(rafId);
   }, [start, target, prefersReducedMotion]);
 
-  const formatted = formatLocale ? value.toLocaleString("en-IN") : String(value);
+  const displayValue = prefersReducedMotion && start ? target : value;
+  const formatted = formatLocale
+    ? displayValue.toLocaleString("en-IN")
+    : String(displayValue);
   return (
     <span>
       {prefix}
