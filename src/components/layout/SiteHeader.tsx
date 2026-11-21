@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 import {
   Mail,
   Phone,
-  MapPin,
   ChevronDown,
   Menu,
   X,
@@ -56,19 +55,34 @@ export function SiteHeader() {
     <>
       {/* 1. Top Saffron Utility Bar (#FF8C00) */}
       <div className="bg-[#FF8C00] text-white text-[11px] sm:text-xs font-medium">
-        {/* Mobile: Single-row compact strip matching reference */}
-        <div className="site-container flex md:hidden items-center justify-center gap-3 py-1.5 whitespace-nowrap overflow-hidden">
+        {/* Mobile: Single-row compact strip with phone + Admissions + KSLU Syllabus */}
+        <div className="site-container flex md:hidden items-center justify-between gap-2 py-1.5 whitespace-nowrap overflow-hidden">
           <a
             href={CONTACT_INFO.phones.principalAndAdmissions[0].href}
-            className="inline-flex items-center gap-1 font-semibold hover:text-[#FFD900] transition-colors"
+            className="inline-flex items-center gap-1 font-semibold hover:text-[#FFD900] transition-colors shrink-0"
           >
             <Phone className="h-3 w-3 shrink-0" aria-hidden="true" />
             <span>+91 91080 26311</span>
           </a>
-          <span className="inline-flex items-center gap-1 font-semibold truncate">
-            <MapPin className="h-3 w-3 shrink-0" aria-hidden="true" />
-            <span>Race Course Rd, Bengaluru</span>
-          </span>
+          <div className="flex items-center gap-2 shrink-0">
+            <Link
+              href="/admissions"
+              className="inline-flex items-center gap-1 hover:text-[#FFD900] transition-colors"
+            >
+              <GraduationCap className="h-3 w-3 shrink-0" aria-hidden="true" />
+              <span>Admissions</span>
+            </Link>
+            <span className="opacity-60" aria-hidden="true">
+              |
+            </span>
+            <Link
+              href="/downloads"
+              className="inline-flex items-center gap-1 hover:text-[#FFD900] transition-colors"
+            >
+              <FileText className="h-3 w-3 shrink-0" aria-hidden="true" />
+              <span>KSLU Syllabus</span>
+            </Link>
+          </div>
         </div>
 
         {/* Desktop & Tablet Utility Bar */}
