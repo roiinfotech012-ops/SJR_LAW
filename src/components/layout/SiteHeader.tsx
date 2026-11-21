@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import {
   Mail,
   Phone,
+  MapPin,
   ChevronDown,
   Menu,
   X,
@@ -55,8 +56,24 @@ export function SiteHeader() {
     <>
       {/* 1. Top Saffron Utility Bar (#FF8C00) */}
       <div className="bg-[#FF8C00] text-white text-[11px] sm:text-xs font-medium">
-        <div className="site-container flex flex-wrap items-center justify-between gap-2 py-1.5">
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+        {/* Mobile: Single-row compact strip matching reference */}
+        <div className="site-container flex md:hidden items-center justify-center gap-3 py-1.5 whitespace-nowrap overflow-hidden">
+          <a
+            href={CONTACT_INFO.phones.principalAndAdmissions[0].href}
+            className="inline-flex items-center gap-1 font-semibold hover:text-[#FFD900] transition-colors"
+          >
+            <Phone className="h-3 w-3 shrink-0" aria-hidden="true" />
+            <span>+91 91080 26311</span>
+          </a>
+          <span className="inline-flex items-center gap-1 font-semibold truncate">
+            <MapPin className="h-3 w-3 shrink-0" aria-hidden="true" />
+            <span>Race Course Rd, Bengaluru</span>
+          </span>
+        </div>
+
+        {/* Desktop & Tablet Utility Bar */}
+        <div className="site-container hidden md:flex items-center justify-between gap-2 py-1.5">
+          <div className="flex items-center gap-x-3">
             <a
               href={CONTACT_INFO.emails[0].href}
               className="inline-flex items-center gap-1.5 hover:text-[#FFD900] transition-colors"
@@ -64,22 +81,22 @@ export function SiteHeader() {
               <Mail className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
               <span>{CONTACT_INFO.emails[0].address}</span>
             </a>
-            <span className="hidden sm:inline opacity-60" aria-hidden="true">
+            <span className="opacity-60" aria-hidden="true">
               |
             </span>
             <a
               href={CONTACT_INFO.phones.principalAndAdmissions[0].href}
-              className="hidden sm:inline-flex items-center gap-1 hover:text-[#FFD900] transition-colors"
+              className="inline-flex items-center gap-1 hover:text-[#FFD900] transition-colors"
             >
               <Phone className="h-3 w-3 shrink-0" aria-hidden="true" />
               <span>{CONTACT_INFO.phones.principalAndAdmissions[0].display}</span>
             </a>
-            <span className="hidden md:inline opacity-60" aria-hidden="true">
+            <span className="opacity-60" aria-hidden="true">
               |
             </span>
             <a
               href={CONTACT_INFO.phones.landline.href}
-              className="hidden md:inline-flex items-center gap-1 hover:text-[#FFD900] transition-colors"
+              className="inline-flex items-center gap-1 hover:text-[#FFD900] transition-colors"
             >
               <Phone className="h-3 w-3 shrink-0" aria-hidden="true" />
               <span>{CONTACT_INFO.phones.landline.display}</span>
@@ -236,14 +253,7 @@ export function SiteHeader() {
       {/* 3. Sticky Indian Green Navigation Bar (#177249) */}
       <header ref={navRef} className="sticky top-0 z-50 w-full bg-[#177249] shadow-lg">
         <div className="site-container">
-          <div className="flex items-center justify-between h-11">
-            {/* Mobile Brand Label inside Nav Bar */}
-            <Link
-              href="/"
-              className="lg:hidden text-xs font-semibold text-white/95 tracking-wide uppercase"
-            >
-              {COLLEGE_IDENTITY.displayName}
-            </Link>
+          <div className="flex items-center justify-end lg:justify-between h-11">
 
             {/* Desktop Horizontal Menu — spans full width evenly */}
             <nav
